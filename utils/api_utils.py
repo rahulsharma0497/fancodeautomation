@@ -6,6 +6,7 @@ def get_users(base_url):
     response.raise_for_status()
     return response.json()
 
+# To calculate the todos
 def get_todos(base_url):
     """Fetch all todos from the API"""
     response = requests.get(f"{base_url}/todos")
